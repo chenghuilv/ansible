@@ -1,3 +1,0 @@
-[submodule "lib/ansible_collections/ibm/spectrum_virtualize"]
-	path = lib/ansible_collections/ibm/spectrum_virtualize
-	url = https://github.com/chenghuilv/ansible.git
