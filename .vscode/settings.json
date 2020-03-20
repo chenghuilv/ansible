@@ -1,0 +1,4 @@
+{
+    "python.pythonPath": "py3/bin/python3",
+    "python.autoComplete.extraPaths": ["./lib"],
+}
