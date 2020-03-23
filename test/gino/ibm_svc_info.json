@@ -1,0 +1,11 @@
+{
+    "ANSIBLE_MODULE_ARGS":{
+        "name":"get volume infor",
+        "clustername": "9.115.241.88",
+        "username": "superuser",
+        "password": "passw0rd",
+        "log_path": "/tmp/ansible.log",
+        "state": "info",
+        "gather_subset": "vol"
+    }
+}

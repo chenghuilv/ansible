@@ -1,4 +1,4 @@
 {
-    "python.pythonPath": "py3/bin/python3",
+    "python.pythonPath": "venv3/bin/python",
     "python.autoComplete.extraPaths": ["./lib"],
 }
