@@ -6,12 +6,20 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
             "name": "ibm_svc_info_module",
             "type": "python",
             "request": "launch",
+            "preLaunchTask": "HackingEnvSetup",
             "console": "integratedTerminal",
             "env": {
-                "PYTHONPATH":"${workspaceRoot}/lib",
+                "PYTHONPATH": "${workspaceRoot}/lib",
             },
             "module": "ansible_collections.ibm.spectrum_virtualize.plugins.modules.ibm_svc_info",
             "args": [
@@ -19,27 +27,16 @@
             ]
         },
         {
-            "name": "ansible_collections.ibm_svc_info_program",
-            "type": "python",
-            "request": "launch",
-            "console": "integratedTerminal",
-            "preLaunchTask": "HackingEnvSetup",
-            "program": "${workspaceFolder}/hacking/test-module.py",
-            "args": [
-             "-m",
-             "${workspaceFolder}/lib/ansible_collections/ibm/spectrum_virtualize/plugins/modules/ibm_svc_info.py",
-             "-a",
-             "${workspaceRoot}/tests/gino/ibm_svc_info.json",
-            ]
-        },
-        {
             "name": "gino_test",
             "type": "python",
             "request": "launch",
             "console": "integratedTerminal",
+            "env": {
+                "PYTHONPATH": "${workspaceRoot}/lib",
+            },
             "module": "ansible.modules.gino.gino_test",
             "args": [
-                "${workspaceRoot}/tests/gino/args.json"
+                "${workspaceRoot}/test/gino/args.json"
             ]
         },
     ]
